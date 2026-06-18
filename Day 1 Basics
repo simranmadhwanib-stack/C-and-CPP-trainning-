@@ -1,24 +1,96 @@
 #include <stdio.h>
 
-int main() {
+/* =====================================================
+   DAY 1: BASICS (C LANGUAGE)
+   Topics: Variables, Data Types, Input/Output, Operators
+   ===================================================== */
 
+int main()
+{
+
+    // =================================================
+    // 1. HELLO WORLD
+    // =================================================
+    /*
     printf("Hello, World!\n");
+    */
 
-    printf("My Name is Simran\n");
 
-    int a = 10, b = 20;
+    // =================================================
+    // 2. SUM OF TWO NUMBERS
+    // =================================================
+    /*
+    int a, b;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
     printf("Sum = %d\n", a + b);
+    */
 
-    int length = 10, breadth = 5;
-    printf("Area of Rectangle = %d\n", length * breadth);
 
-    float p = 1000, r = 5, t = 2;
-    float si = (p * r * t) / 100;
+    // =================================================
+    // 3. AREA OF RECTANGLE
+    // =================================================
+    /*
+    float length, width;
+
+    printf("Enter length and width: ");
+    scanf("%f %f", &length, &width);
+
+    printf("Area = %.2f\n", length * width);
+    */
+
+
+    // =================================================
+    // 4. SIMPLE INTEREST
+    // Formula = (P * R * T) / 100
+    // =================================================
+    /*
+    float p, r, t, si;
+
+    printf("Enter Principal, Rate and Time: ");
+    scanf("%f %f %f", &p, &r, &t);
+
+    si = (p * r * t) / 100;
+
     printf("Simple Interest = %.2f\n", si);
+    */
 
-    float c = 25;
-    float f = (c * 9 / 5) + 32;
-    printf("Temperature in Fahrenheit = %.2f\n", f);
+
+    // =================================================
+    // 5. SWAP TWO NUMBERS
+    // =================================================
+    /*
+    int a, b, temp;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    temp = a;
+    a = b;
+    b = temp;
+
+    printf("After Swapping:\n");
+    printf("First Number = %d\n", a);
+    printf("Second Number = %d\n", b);
+    */
+
+
+    // =================================================
+    // 6. CELSIUS TO FAHRENHEIT
+    // Formula = (C * 9/5) + 32
+    // =================================================
+    /*
+    float celsius, fahrenheit;
+
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+
+    fahrenheit = (celsius * 9 / 5) + 32;
+
+    printf("Temperature in Fahrenheit = %.2f\n", fahrenheit);
+    */
+
 
     return 0;
 }
@@ -27,24 +99,100 @@ int main() {
 #include <iostream>
 using namespace std;
 
-int main() {
+/* =====================================================
+   DAY 1: BASICS (C++)
+   Topics: Variables, Data Types, Input/Output, Operators
+   ===================================================== */
+
+int main()
+{
+
+    // =================================================
+    // 1. HELLO WORLD
+    // =================================================
+    /*
     cout << "Hello, World!" << endl;
+    */
 
-    cout << "My Name is Simran" << endl;
 
-    int a = 10, b = 20;
+    // =================================================
+    // 2. SUM OF TWO NUMBERS
+    // =================================================
+    /*
+    int a, b;
+
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
     cout << "Sum = " << a + b << endl;
+    */
 
-    int length = 10, breadth = 5;
-    cout << "Area of Rectangle = " << length * breadth << endl;
 
-    float p = 1000, r = 5, t = 2;
-    float si = (p * r * t) / 100;
+    // =================================================
+    // 3. AREA OF RECTANGLE
+    // =================================================
+    /*
+    float length, width;
+
+    cout << "Enter length and width: ";
+    cin >> length >> width;
+
+    cout << "Area = " << length * width << endl;
+    */
+
+
+    // =================================================
+    // 4. SIMPLE INTEREST
+    // Formula = (P * R * T) / 100
+    // =================================================
+    /*
+    float p, r, t, si;
+
+    cout << "Enter Principal, Rate and Time: ";
+    cin >> p >> r >> t;
+
+    si = (p * r * t) / 100;
+
     cout << "Simple Interest = " << si << endl;
+    */
 
-    float c = 25;
-    float f = (c * 9 / 5) + 32;
-    cout << "Temperature in Fahrenheit = " << f << endl;
+
+    // =================================================
+    // 5. SWAP TWO NUMBERS
+    // =================================================
+    /*
+    int a, b, temp;
+
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    temp = a;
+    a = b;
+    b = temp;
+
+    cout << "After Swapping:" << endl;
+    cout << "First Number = " << a << endl;
+    cout << "Second Number = " << b << endl;
+    */
+
+
+    // =================================================
+    // 6. CELSIUS TO FAHRENHEIT
+    // Formula = (C * 9/5) + 32
+    // =================================================
+    /*
+    float celsius, fahrenheit;
+
+    cout << "Enter temperature in Celsius: ";
+    cin >> celsius;
+
+    fahrenheit = (celsius * 9 / 5) + 32;
+
+    cout << "Temperature in Fahrenheit = "
+         << fahrenheit << endl;
+    */
+
 
     return 0;
 }
+
