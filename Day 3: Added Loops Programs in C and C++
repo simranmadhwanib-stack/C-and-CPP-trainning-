@@ -1,121 +1,279 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
-int main() {
+/* =====================================================
+   DAY 3: LOOPS (C++)
+   Topics: for, while, do-while, nested loops
+   ===================================================== */
 
-    // Print 1 to N
-    int n = 10;
-    printf("Print 1 to N:\n");
-    for(int i = 1; i <= n; i++) {
-        printf("%d ", i);
+int main()
+{
+
+    // =================================================
+    // 1. PRINT 1 TO N
+    // =================================================
+    /*
+    int n;
+
+    cout << "Enter N: ";
+    cin >> n;
+
+    for(int i = 1; i <= n; i++)
+    {
+        cout << i << " ";
     }
+    cout << endl;
+    */
 
-    // Sum of N Numbers
-    int sum = 0;
-    for(int i = 1; i <= n; i++) {
+
+    // =================================================
+    // 2. SUM OF N NUMBERS
+    // =================================================
+    /*
+    int n, sum = 0;
+
+    cout << "Enter N: ";
+    cin >> n;
+
+    for(int i = 1; i <= n; i++)
+    {
         sum += i;
     }
-    printf("\n\nSum of first %d numbers = %d\n", n, sum);
 
-    // Factorial
-    int fact = 1;
-    for(int i = 1; i <= 5; i++) {
-        fact *= i;
+    cout << "Sum = " << sum << endl;
+    */
+
+
+    // =================================================
+    // 3. FACTORIAL
+    // =================================================
+    /*
+    int n;
+    long long factorial = 1;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    for(int i = 1; i <= n; i++)
+    {
+        factorial *= i;
     }
-    printf("Factorial of 5 = %d\n", fact);
 
-    // Reverse Number
-    int num = 1234, reverse = 0, temp = num;
-    while(temp != 0) {
-        reverse = reverse * 10 + temp % 10;
-        temp /= 10;
+    cout << "Factorial = " << factorial << endl;
+    */
+
+
+    // =================================================
+    // 4. REVERSE NUMBER
+    // =================================================
+    /*
+    int num, reverse = 0;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    while(num != 0)
+    {
+        reverse = reverse * 10 + num % 10;
+        num /= 10;
     }
-    printf("Reverse of %d = %d\n", num, reverse);
 
-    // Count Digits
-    int count = 0;
-    temp = num;
-    while(temp != 0) {
+    cout << "Reversed Number = " << reverse << endl;
+    */
+
+
+    // =================================================
+    // 5. COUNT DIGITS
+    // =================================================
+    /*
+    int num, count = 0;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    while(num != 0)
+    {
         count++;
-        temp /= 10;
+        num /= 10;
     }
-    printf("Number of digits in %d = %d\n", num, count);
 
-    // Prime Number Check
-    int primeNum = 17, isPrime = 1;
-    for(int i = 2; i < primeNum; i++) {
-        if(primeNum % i == 0) {
-            isPrime = 0;
-            break;
+    cout << "Number of Digits = " << count << endl;
+    */
+
+
+    // =================================================
+    // 6. PRIME NUMBER CHECK
+    // =================================================
+    /*
+    int num;
+    bool isPrime = true;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if(num <= 1)
+    {
+        isPrime = false;
+    }
+    else
+    {
+        for(int i = 2; i <= num / 2; i++)
+        {
+            if(num % i == 0)
+            {
+                isPrime = false;
+                break;
+            }
         }
     }
 
     if(isPrime)
-        printf("%d is Prime\n", primeNum);
+        cout << "Prime Number" << endl;
     else
-        printf("%d is Not Prime\n", primeNum);
+        cout << "Not a Prime Number" << endl;
+    */
+
 
     return 0;
 }
 
 
-#include <iostream>
-using namespace std;
 
-int main() {
 
-    // Print 1 to N
-    int n = 10;
-    cout << "Print 1 to N:" << endl;
-    for(int i = 1; i <= n; i++) {
-        cout << i << " ";
+
+#include <stdio.h>
+
+/* =====================================================
+   DAY 3: LOOPS (C)
+   Topics: for, while, do-while, nested loops
+   ===================================================== */
+
+int main()
+{
+
+    // =================================================
+    // 1. PRINT 1 TO N
+    // =================================================
+    /*
+    int n;
+
+    printf("Enter N: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++)
+    {
+        printf("%d ", i);
     }
+    printf("\n");
+    */
 
-    // Sum of N Numbers
-    int sum = 0;
-    for(int i = 1; i <= n; i++) {
+
+    // =================================================
+    // 2. SUM OF N NUMBERS
+    // =================================================
+    /*
+    int n, sum = 0;
+
+    printf("Enter N: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++)
+    {
         sum += i;
     }
-    cout << "\n\nSum of first " << n << " numbers = " << sum << endl;
 
-    // Factorial
-    int fact = 1;
-    for(int i = 1; i <= 5; i++) {
-        fact *= i;
+    printf("Sum = %d\n", sum);
+    */
+
+
+    // =================================================
+    // 3. FACTORIAL
+    // =================================================
+    /*
+    int n;
+    long long factorial = 1;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++)
+    {
+        factorial *= i;
     }
-    cout << "Factorial of 5 = " << fact << endl;
 
-    // Reverse Number
-    int num = 1234, reverse = 0, temp = num;
-    while(temp != 0) {
-        reverse = reverse * 10 + temp % 10;
-        temp /= 10;
+    printf("Factorial = %lld\n", factorial);
+    */
+
+
+    // =================================================
+    // 4. REVERSE NUMBER
+    // =================================================
+    /*
+    int num, reverse = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num != 0)
+    {
+        reverse = reverse * 10 + num % 10;
+        num /= 10;
     }
-    cout << "Reverse of " << num << " = " << reverse << endl;
 
-    // Count Digits
-    int count = 0;
-    temp = num;
-    while(temp != 0) {
+    printf("Reversed Number = %d\n", reverse);
+    */
+
+
+    // =================================================
+    // 5. COUNT DIGITS
+    // =================================================
+    /*
+    int num, count = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num != 0)
+    {
         count++;
-        temp /= 10;
+        num /= 10;
     }
-    cout << "Number of digits in " << num << " = " << count << endl;
 
-    // Prime Number Check
-    int primeNum = 17;
-    bool isPrime = true;
+    printf("Number of Digits = %d\n", count);
+    */
 
-    for(int i = 2; i < primeNum; i++) {
-        if(primeNum % i == 0) {
-            isPrime = false;
-            break;
+
+    // =================================================
+    // 6. PRIME NUMBER CHECK
+    // =================================================
+    /*
+    int num, isPrime = 1;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if(num <= 1)
+    {
+        isPrime = 0;
+    }
+    else
+    {
+        for(int i = 2; i <= num / 2; i++)
+        {
+            if(num % i == 0)
+            {
+                isPrime = 0;
+                break;
+            }
         }
     }
 
     if(isPrime)
-        cout << primeNum << " is Prime" << endl;
+        printf("Prime Number\n");
     else
-        cout << primeNum << " is Not Prime" << endl;
+        printf("Not a Prime Number\n");
+    */
+
 
     return 0;
 }
