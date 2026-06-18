@@ -1,106 +1,285 @@
-#include <stdio.h>
-
-int main() {
-
-    // Even or Odd
-    int num = 7;
-    if (num % 2 == 0)
-        printf("%d is Even\n", num);
-    else
-        printf("%d is Odd\n", num);
-
-    // Positive, Negative, or Zero
-    int n = -5;
-    if (n > 0)
-        printf("%d is Positive\n", n);
-    else if (n < 0)
-        printf("%d is Negative\n", n);
-    else
-        printf("Number is Zero\n");
-
-    // Largest of Three Numbers
-    int a = 10, b = 25, c = 15;
-    if (a >= b && a >= c)
-        printf("Largest = %d\n", a);
-    else if (b >= a && b >= c)
-        printf("Largest = %d\n", b);
-    else
-        printf("Largest = %d\n", c);
-
-    // Leap Year Check
-    int year = 2024;
-    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
-        printf("%d is a Leap Year\n", year);
-    else
-        printf("%d is not a Leap Year\n", year);
-
-    // Grade Calculator
-    int marks = 85;
-    if (marks >= 90)
-        printf("Grade A+\n");
-    else if (marks >= 80)
-        printf("Grade A\n");
-    else if (marks >= 70)
-        printf("Grade B\n");
-    else if (marks >= 60)
-        printf("Grade C\n");
-    else
-        printf("Grade F\n");
-
-    return 0;
-}
-
-
-
 #include <iostream>
 using namespace std;
 
-int main() {
+/* =====================================================
+   DAY 2: CONDITIONAL STATEMENTS (C++)
+   Topics: if, if-else, nested if, switch
+   ===================================================== */
 
-    // Even or Odd
-    int num = 7;
+int main()
+{
+
+    // =================================================
+    // 1. EVEN OR ODD
+    // =================================================
+    /*
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
     if (num % 2 == 0)
-        cout << num << " is Even" << endl;
+        cout << "Even Number" << endl;
     else
-        cout << num << " is Odd" << endl;
+        cout << "Odd Number" << endl;
+    */
 
-    // Positive, Negative, or Zero
-    int n = -5;
-    if (n > 0)
-        cout << n << " is Positive" << endl;
-    else if (n < 0)
-        cout << n << " is Negative" << endl;
-    else
-        cout << "Number is Zero" << endl;
 
-    // Largest of Three Numbers
-    int a = 10, b = 25, c = 15;
+    // =================================================
+    // 2. LARGEST OF THREE NUMBERS
+    // =================================================
+    /*
+    int a, b, c;
+
+    cout << "Enter three numbers: ";
+    cin >> a >> b >> c;
+
     if (a >= b && a >= c)
         cout << "Largest = " << a << endl;
     else if (b >= a && b >= c)
         cout << "Largest = " << b << endl;
     else
         cout << "Largest = " << c << endl;
+    */
 
-    // Leap Year Check
-    int year = 2024;
-    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
-        cout << year << " is a Leap Year" << endl;
+
+    // =================================================
+    // 3. LEAP YEAR
+    // =================================================
+    /*
+    int year;
+
+    cout << "Enter a year: ";
+    cin >> year;
+
+    if ((year % 4 == 0 && year % 100 != 0) ||
+        (year % 400 == 0))
+        cout << "Leap Year" << endl;
     else
-        cout << year << " is not a Leap Year" << endl;
+        cout << "Not a Leap Year" << endl;
+    */
 
-    // Grade Calculator
-    int marks = 85;
+
+    // =================================================
+    // 4. GRADE CALCULATOR
+    // =================================================
+    /*
+    int marks;
+
+    cout << "Enter marks: ";
+    cin >> marks;
+
     if (marks >= 90)
-        cout << "Grade A+" << endl;
-    else if (marks >= 80)
         cout << "Grade A" << endl;
-    else if (marks >= 70)
+    else if (marks >= 80)
         cout << "Grade B" << endl;
-    else if (marks >= 60)
+    else if (marks >= 70)
         cout << "Grade C" << endl;
+    else if (marks >= 60)
+        cout << "Grade D" << endl;
     else
-        cout << "Grade F" << endl;
+        cout << "Fail" << endl;
+    */
+
+
+    // =================================================
+    // 5. POSITIVE / NEGATIVE / ZERO
+    // =================================================
+    /*
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num > 0)
+        cout << "Positive Number" << endl;
+    else if (num < 0)
+        cout << "Negative Number" << endl;
+    else
+        cout << "Zero" << endl;
+    */
+
+
+    // =================================================
+    // 6. SIMPLE CALCULATOR (USING SWITCH)
+    // =================================================
+    /*
+    float a, b;
+    char op;
+
+    cout << "Enter expression (e.g. 10 + 5): ";
+    cin >> a >> op >> b;
+
+    switch(op)
+    {
+        case '+':
+            cout << "Result = " << a + b << endl;
+            break;
+
+        case '-':
+            cout << "Result = " << a - b << endl;
+            break;
+
+        case '*':
+            cout << "Result = " << a * b << endl;
+            break;
+
+        case '/':
+            if (b != 0)
+                cout << "Result = " << a / b << endl;
+            else
+                cout << "Division by zero not allowed!" << endl;
+            break;
+
+        default:
+            cout << "Invalid Operator!" << endl;
+    }
+    */
+
+
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+
+/* =====================================================
+   DAY 2: CONDITIONAL STATEMENTS (C)
+   Topics: if, if-else, nested if, switch
+   ===================================================== */
+
+int main()
+{
+
+    // =================================================
+    // 1. EVEN OR ODD
+    // =================================================
+    /*
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if(num % 2 == 0)
+        printf("Even Number\n");
+    else
+        printf("Odd Number\n");
+    */
+
+
+    // =================================================
+    // 2. LARGEST OF THREE NUMBERS
+    // =================================================
+    /*
+    int a, b, c;
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if(a >= b && a >= c)
+        printf("Largest = %d\n", a);
+    else if(b >= a && b >= c)
+        printf("Largest = %d\n", b);
+    else
+        printf("Largest = %d\n", c);
+    */
+
+
+    // =================================================
+    // 3. LEAP YEAR
+    // =================================================
+    /*
+    int year;
+
+    printf("Enter a year: ");
+    scanf("%d", &year);
+
+    if((year % 4 == 0 && year % 100 != 0) ||
+       (year % 400 == 0))
+        printf("Leap Year\n");
+    else
+        printf("Not a Leap Year\n");
+    */
+
+
+    // =================================================
+    // 4. GRADE CALCULATOR
+    // =================================================
+    /*
+    int marks;
+
+    printf("Enter marks: ");
+    scanf("%d", &marks);
+
+    if(marks >= 90)
+        printf("Grade A\n");
+    else if(marks >= 80)
+        printf("Grade B\n");
+    else if(marks >= 70)
+        printf("Grade C\n");
+    else if(marks >= 60)
+        printf("Grade D\n");
+    else
+        printf("Fail\n");
+    */
+
+
+    // =================================================
+    // 5. POSITIVE / NEGATIVE / ZERO
+    // =================================================
+    /*
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if(num > 0)
+        printf("Positive Number\n");
+    else if(num < 0)
+        printf("Negative Number\n");
+    else
+        printf("Zero\n");
+    */
+
+
+    // =================================================
+    // 6. SIMPLE CALCULATOR (USING SWITCH)
+    // =================================================
+    /*
+    float a, b;
+    char op;
+
+    printf("Enter expression (e.g. 10 + 5): ");
+    scanf("%f %c %f", &a, &op, &b);
+
+    switch(op)
+    {
+        case '+':
+            printf("Result = %.2f\n", a + b);
+            break;
+
+        case '-':
+            printf("Result = %.2f\n", a - b);
+            break;
+
+        case '*':
+            printf("Result = %.2f\n", a * b);
+            break;
+
+        case '/':
+            if(b != 0)
+                printf("Result = %.2f\n", a / b);
+            else
+                printf("Division by zero not allowed!\n");
+            break;
+
+        default:
+            printf("Invalid Operator!\n");
+    }
+    */
+
 
     return 0;
 }
