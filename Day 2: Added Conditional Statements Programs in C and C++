@@ -1,0 +1,106 @@
+#include <stdio.h>
+
+int main() {
+
+    // Even or Odd
+    int num = 7;
+    if (num % 2 == 0)
+        printf("%d is Even\n", num);
+    else
+        printf("%d is Odd\n", num);
+
+    // Positive, Negative, or Zero
+    int n = -5;
+    if (n > 0)
+        printf("%d is Positive\n", n);
+    else if (n < 0)
+        printf("%d is Negative\n", n);
+    else
+        printf("Number is Zero\n");
+
+    // Largest of Three Numbers
+    int a = 10, b = 25, c = 15;
+    if (a >= b && a >= c)
+        printf("Largest = %d\n", a);
+    else if (b >= a && b >= c)
+        printf("Largest = %d\n", b);
+    else
+        printf("Largest = %d\n", c);
+
+    // Leap Year Check
+    int year = 2024;
+    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+        printf("%d is a Leap Year\n", year);
+    else
+        printf("%d is not a Leap Year\n", year);
+
+    // Grade Calculator
+    int marks = 85;
+    if (marks >= 90)
+        printf("Grade A+\n");
+    else if (marks >= 80)
+        printf("Grade A\n");
+    else if (marks >= 70)
+        printf("Grade B\n");
+    else if (marks >= 60)
+        printf("Grade C\n");
+    else
+        printf("Grade F\n");
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    // Even or Odd
+    int num = 7;
+    if (num % 2 == 0)
+        cout << num << " is Even" << endl;
+    else
+        cout << num << " is Odd" << endl;
+
+    // Positive, Negative, or Zero
+    int n = -5;
+    if (n > 0)
+        cout << n << " is Positive" << endl;
+    else if (n < 0)
+        cout << n << " is Negative" << endl;
+    else
+        cout << "Number is Zero" << endl;
+
+    // Largest of Three Numbers
+    int a = 10, b = 25, c = 15;
+    if (a >= b && a >= c)
+        cout << "Largest = " << a << endl;
+    else if (b >= a && b >= c)
+        cout << "Largest = " << b << endl;
+    else
+        cout << "Largest = " << c << endl;
+
+    // Leap Year Check
+    int year = 2024;
+    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+        cout << year << " is a Leap Year" << endl;
+    else
+        cout << year << " is not a Leap Year" << endl;
+
+    // Grade Calculator
+    int marks = 85;
+    if (marks >= 90)
+        cout << "Grade A+" << endl;
+    else if (marks >= 80)
+        cout << "Grade A" << endl;
+    else if (marks >= 70)
+        cout << "Grade B" << endl;
+    else if (marks >= 60)
+        cout << "Grade C" << endl;
+    else
+        cout << "Grade F" << endl;
+
+    return 0;
+}
