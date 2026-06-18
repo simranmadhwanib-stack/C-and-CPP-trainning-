@@ -1,0 +1,121 @@
+#include <stdio.h>
+
+int main() {
+
+    // Print 1 to N
+    int n = 10;
+    printf("Print 1 to N:\n");
+    for(int i = 1; i <= n; i++) {
+        printf("%d ", i);
+    }
+
+    // Sum of N Numbers
+    int sum = 0;
+    for(int i = 1; i <= n; i++) {
+        sum += i;
+    }
+    printf("\n\nSum of first %d numbers = %d\n", n, sum);
+
+    // Factorial
+    int fact = 1;
+    for(int i = 1; i <= 5; i++) {
+        fact *= i;
+    }
+    printf("Factorial of 5 = %d\n", fact);
+
+    // Reverse Number
+    int num = 1234, reverse = 0, temp = num;
+    while(temp != 0) {
+        reverse = reverse * 10 + temp % 10;
+        temp /= 10;
+    }
+    printf("Reverse of %d = %d\n", num, reverse);
+
+    // Count Digits
+    int count = 0;
+    temp = num;
+    while(temp != 0) {
+        count++;
+        temp /= 10;
+    }
+    printf("Number of digits in %d = %d\n", num, count);
+
+    // Prime Number Check
+    int primeNum = 17, isPrime = 1;
+    for(int i = 2; i < primeNum; i++) {
+        if(primeNum % i == 0) {
+            isPrime = 0;
+            break;
+        }
+    }
+
+    if(isPrime)
+        printf("%d is Prime\n", primeNum);
+    else
+        printf("%d is Not Prime\n", primeNum);
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    // Print 1 to N
+    int n = 10;
+    cout << "Print 1 to N:" << endl;
+    for(int i = 1; i <= n; i++) {
+        cout << i << " ";
+    }
+
+    // Sum of N Numbers
+    int sum = 0;
+    for(int i = 1; i <= n; i++) {
+        sum += i;
+    }
+    cout << "\n\nSum of first " << n << " numbers = " << sum << endl;
+
+    // Factorial
+    int fact = 1;
+    for(int i = 1; i <= 5; i++) {
+        fact *= i;
+    }
+    cout << "Factorial of 5 = " << fact << endl;
+
+    // Reverse Number
+    int num = 1234, reverse = 0, temp = num;
+    while(temp != 0) {
+        reverse = reverse * 10 + temp % 10;
+        temp /= 10;
+    }
+    cout << "Reverse of " << num << " = " << reverse << endl;
+
+    // Count Digits
+    int count = 0;
+    temp = num;
+    while(temp != 0) {
+        count++;
+        temp /= 10;
+    }
+    cout << "Number of digits in " << num << " = " << count << endl;
+
+    // Prime Number Check
+    int primeNum = 17;
+    bool isPrime = true;
+
+    for(int i = 2; i < primeNum; i++) {
+        if(primeNum % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if(isPrime)
+        cout << primeNum << " is Prime" << endl;
+    else
+        cout << primeNum << " is Not Prime" << endl;
+
+    return 0;
+}
