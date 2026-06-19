@@ -1,0 +1,366 @@
+#include <stdio.h>
+
+/* =====================================================
+   DAY 4: FUNCTIONS (C)
+   ===================================================== */
+
+
+/* =====================================================
+   1. SUM FUNCTION
+   ===================================================== */
+/*
+int sum(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+    int a, b;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Sum = %d", sum(a, b));
+
+    return 0;
+}
+*/
+
+
+/* =====================================================
+   2. MAXIMUM OF TWO NUMBERS
+   ===================================================== */
+/*
+int maximum(int a, int b)
+{
+    return (a > b) ? a : b;
+}
+
+int main()
+{
+    int a, b;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Maximum = %d", maximum(a, b));
+
+    return 0;
+}
+*/
+
+
+/* =====================================================
+   3. PRIME CHECK FUNCTION
+   ===================================================== */
+/*
+int isPrime(int num)
+{
+    if(num <= 1)
+        return 0;
+
+    for(int i = 2; i <= num/2; i++)
+    {
+        if(num % i == 0)
+            return 0;
+    }
+
+    return 1;
+}
+
+int main()
+{
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if(isPrime(num))
+        printf("Prime Number");
+    else
+        printf("Not a Prime Number");
+
+    return 0;
+}
+*/
+
+
+/* =====================================================
+   4. FACTORIAL FUNCTION
+   ===================================================== */
+/*
+long long factorial(int n)
+{
+    long long fact = 1;
+
+    for(int i = 1; i <= n; i++)
+        fact *= i;
+
+    return fact;
+}
+
+int main()
+{
+    int n;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    printf("Factorial = %lld", factorial(n));
+
+    return 0;
+}
+*/
+
+
+/* =====================================================
+   5. POWER FUNCTION
+   ===================================================== */
+/*
+long long power(int base, int exp)
+{
+    long long result = 1;
+
+    for(int i = 1; i <= exp; i++)
+        result *= base;
+
+    return result;
+}
+
+int main()
+{
+    int base, exp;
+
+    printf("Enter base and exponent: ");
+    scanf("%d %d", &base, &exp);
+
+    printf("Result = %lld", power(base, exp));
+
+    return 0;
+}
+*/
+
+
+/* =====================================================
+   6. GCD FUNCTION
+   ===================================================== */
+/*
+int gcd(int a, int b)
+{
+    while(b != 0)
+    {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+
+    return a;
+}
+
+int main()
+{
+    int a, b;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("GCD = %d", gcd(a, b));
+
+    return 0;
+}
+*/
+
+
+int main()
+{
+    printf("Uncomment any one program and run it.");
+    return 0;
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+/* =====================================================
+   DAY 4: FUNCTIONS (C++)
+   Topics: Function Declaration, Definition,
+           Parameters, Return Values, Scope
+   ===================================================== */
+
+
+/* =====================================================
+   1. SUM FUNCTION
+   ===================================================== */
+/*
+int sum(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+    int a, b;
+
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    cout << "Sum = " << sum(a, b);
+
+    return 0;
+}
+*/
+
+
+/* =====================================================
+   2. MAXIMUM OF TWO NUMBERS
+   ===================================================== */
+/*
+int maximum(int a, int b)
+{
+    return (a > b) ? a : b;
+}
+
+int main()
+{
+    int a, b;
+
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    cout << "Maximum = " << maximum(a, b);
+
+    return 0;
+}
+*/
+
+
+/* =====================================================
+   3. PRIME CHECK FUNCTION
+   ===================================================== */
+/*
+bool isPrime(int num)
+{
+    if(num <= 1)
+        return false;
+
+    for(int i = 2; i <= num / 2; i++)
+    {
+        if(num % i == 0)
+            return false;
+    }
+
+    return true;
+}
+
+int main()
+{
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if(isPrime(num))
+        cout << "Prime Number";
+    else
+        cout << "Not a Prime Number";
+
+    return 0;
+}
+*/
+
+
+/* =====================================================
+   4. FACTORIAL FUNCTION
+   ===================================================== */
+/*
+long long factorial(int n)
+{
+    long long fact = 1;
+
+    for(int i = 1; i <= n; i++)
+        fact *= i;
+
+    return fact;
+}
+
+int main()
+{
+    int n;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    cout << "Factorial = " << factorial(n);
+
+    return 0;
+}
+*/
+
+
+/* =====================================================
+   5. POWER FUNCTION
+   ===================================================== */
+/*
+long long power(int base, int exp)
+{
+    long long result = 1;
+
+    for(int i = 1; i <= exp; i++)
+        result *= base;
+
+    return result;
+}
+
+int main()
+{
+    int base, exp;
+
+    cout << "Enter base and exponent: ";
+    cin >> base >> exp;
+
+    cout << "Result = " << power(base, exp);
+
+    return 0;
+}
+*/
+
+
+/* =====================================================
+   6. GCD FUNCTION
+   ===================================================== */
+/*
+int gcd(int a, int b)
+{
+    while(b != 0)
+    {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+
+    return a;
+}
+
+int main()
+{
+    int a, b;
+
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    cout << "GCD = " << gcd(a, b);
+
+    return 0;
+}
+*/
+
+
+int main()
+{
+    cout << "Uncomment any one program and run it.";
+    return 0;
+}
