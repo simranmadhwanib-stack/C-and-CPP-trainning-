@@ -1,0 +1,181 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    // =====================================================
+    // 1. Store and Print Elements
+    // =====================================================
+
+    /*
+    vector<int> v;
+    int n, x;
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    for(int i = 0; i < n; i++)
+    {
+        cin >> x;
+        v.push_back(x);
+    }
+
+    cout << "Elements are: ";
+    for(int i = 0; i < v.size(); i++)
+        cout << v[i] << " ";
+    */
+
+    // =====================================================
+    // 2. Maximum Element
+    // =====================================================
+
+    /*
+    vector<int> v;
+    int n, x;
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    for(int i = 0; i < n; i++)
+    {
+        cin >> x;
+        v.push_back(x);
+    }
+
+    int maxElement = v[0];
+
+    for(int i = 1; i < v.size(); i++)
+    {
+        if(v[i] > maxElement)
+            maxElement = v[i];
+    }
+
+    cout << "Maximum Element = " << maxElement;
+    */
+
+    // =====================================================
+    // 3. Minimum Element
+    // =====================================================
+
+    /*
+    vector<int> v;
+    int n, x;
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    for(int i = 0; i < n; i++)
+    {
+        cin >> x;
+        v.push_back(x);
+    }
+
+    int minElement = v[0];
+
+    for(int i = 1; i < v.size(); i++)
+    {
+        if(v[i] < minElement)
+            minElement = v[i];
+    }
+
+    cout << "Minimum Element = " << minElement;
+    */
+
+    // =====================================================
+    // 4. Reverse Vector
+    // =====================================================
+
+    /*
+    vector<int> v;
+    int n, x;
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    for(int i = 0; i < n; i++)
+    {
+        cin >> x;
+        v.push_back(x);
+    }
+
+    reverse(v.begin(), v.end());
+
+    cout << "Reversed Vector: ";
+    for(int i = 0; i < v.size(); i++)
+        cout << v[i] << " ";
+    */
+
+    // =====================================================
+    // 5. Remove Duplicates
+    // =====================================================
+
+    /*
+    vector<int> v;
+    int n, x;
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    for(int i = 0; i < n; i++)
+    {
+        cin >> x;
+        v.push_back(x);
+    }
+
+    vector<int> result;
+
+    for(int i = 0; i < v.size(); i++)
+    {
+        bool found = false;
+
+        for(int j = 0; j < result.size(); j++)
+        {
+            if(v[i] == result[j])
+            {
+                found = true;
+                break;
+            }
+        }
+
+        if(!found)
+            result.push_back(v[i]);
+    }
+
+    cout << "After Removing Duplicates: ";
+    for(int i = 0; i < result.size(); i++)
+        cout << result[i] << " ";
+    */
+
+    // =====================================================
+    // 6. Rotate Vector (Left Rotation by 1)
+    // =====================================================
+
+    /*
+    vector<int> v;
+    int n, x;
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    for(int i = 0; i < n; i++)
+    {
+        cin >> x;
+        v.push_back(x);
+    }
+
+    int first = v[0];
+
+    for(int i = 0; i < v.size() - 1; i++)
+        v[i] = v[i + 1];
+
+    v[v.size() - 1] = first;
+
+    cout << "Vector after Rotation: ";
+    for(int i = 0; i < v.size(); i++)
+        cout << v[i] << " ";
+    */
+
+    return 0;
+}
