@@ -1,0 +1,220 @@
+#include <iostream>
+using namespace std;
+
+/*====================================================
+Q1 - Student Class
+=====================================================
+
+class Student
+{
+    string name;
+    int rollNo;
+    float marks;
+
+public:
+    void setData(string n, int r, float m)
+    {
+        name = n;
+        rollNo = r;
+        marks = m;
+    }
+
+    void display()
+    {
+        cout << "Name: " << name << endl;
+        cout << "Roll No: " << rollNo << endl;
+        cout << "Marks: " << marks << endl;
+    }
+};
+
+int main()
+{
+    Student s;
+    s.setData("Simran", 101, 89.5);
+    s.display();
+
+    return 0;
+}
+
+*/
+
+/*====================================================
+Q2 - Employee Class
+=====================================================
+
+class Employee
+{
+    string name;
+    int id;
+
+public:
+    Employee(string n, int i)
+    {
+        name = n;
+        id = i;
+    }
+
+    void display()
+    {
+        cout << "Employee Name: " << name << endl;
+        cout << "Employee ID: " << id << endl;
+    }
+};
+
+int main()
+{
+    Employee e("Rahul", 1001);
+    e.display();
+
+    return 0;
+}
+
+*/
+
+/*====================================================
+Q3 - Rectangle Area
+=====================================================
+
+class Rectangle
+{
+    int length, width;
+
+public:
+    void setData(int l, int w)
+    {
+        length = l;
+        width = w;
+    }
+
+    int area()
+    {
+        return length * width;
+    }
+};
+
+int main()
+{
+    Rectangle r;
+
+    r.setData(10, 5);
+
+    cout << "Area = " << r.area();
+
+    return 0;
+}
+
+*/
+
+/*====================================================
+Q4 - Bank Account
+=====================================================
+
+class BankAccount
+{
+    float balance;
+
+public:
+    BankAccount()
+    {
+        balance = 0;
+    }
+
+    void deposit(float amount)
+    {
+        balance += amount;
+    }
+
+    void withdraw(float amount)
+    {
+        if(amount <= balance)
+            balance -= amount;
+        else
+            cout << "Insufficient Balance!" << endl;
+    }
+
+    void display()
+    {
+        cout << "Final Balance = " << balance << endl;
+    }
+};
+
+int main()
+{
+    BankAccount b;
+
+    b.deposit(5000);
+    b.withdraw(2000);
+
+    b.display();
+
+    return 0;
+}
+
+*/
+
+/*====================================================
+Q5 - Car + Static
+=====================================================
+
+class Car
+{
+    static int count;
+
+public:
+    Car()
+    {
+        count++;
+    }
+
+    static void showCount()
+    {
+        cout << "Total Cars Created = " << count << endl;
+    }
+};
+
+int Car::count = 0;
+
+int main()
+{
+    Car c1;
+    Car c2;
+    Car c3;
+
+    Car::showCount();
+
+    return 0;
+}
+
+*/
+
+/*====================================================
+Q6 - Box + this Pointer
+=====================================================
+
+class Box
+{
+    int length;
+
+public:
+    void setLength(int length)
+    {
+        this->length = length;
+    }
+
+    void display()
+    {
+        cout << "Length = " << length << endl;
+    }
+};
+
+int main()
+{
+    Box b;
+
+    b.setLength(15);
+    b.display();
+
+    return 0;
+}
+
+*/
