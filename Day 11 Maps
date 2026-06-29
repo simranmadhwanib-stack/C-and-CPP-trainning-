@@ -1,0 +1,186 @@
+#include <iostream>
+#include <map>
+#include <sstream>
+#include <string>
+using namespace std;
+
+int main()
+{
+
+/*====================================================
+Program 1 : Frequency of Elements
+Count frequency of each element in an array.
+======================================================
+
+int n, a[100];
+map<int,int> freq;
+
+cout<<"Enter number of elements: ";
+cin>>n;
+
+cout<<"Enter elements: ";
+for(int i=0;i<n;i++)
+{
+    cin>>a[i];
+    freq[a[i]]++;
+}
+
+cout<<"\nFrequency of Elements:\n";
+for(auto x : freq)
+{
+    cout<<x.first<<" -> "<<x.second<<endl;
+}
+
+*/
+
+/*====================================================
+Program 2 : Character Frequency
+Count frequency of every character in a string.
+======================================================
+
+string str;
+map<char,int> freq;
+
+cin.ignore();
+cout<<"Enter a string: ";
+getline(cin,str);
+
+for(char ch : str)
+{
+    if(ch!=' ')
+        freq[ch]++;
+}
+
+cout<<"\nCharacter Frequency:\n";
+for(auto x : freq)
+{
+    cout<<x.first<<" -> "<<x.second<<endl;
+}
+
+*/
+
+/*====================================================
+Program 3 : Most Frequent Element
+Find the element with highest frequency.
+======================================================
+
+int n,a[100];
+map<int,int> freq;
+
+cout<<"Enter number of elements: ";
+cin>>n;
+
+cout<<"Enter elements: ";
+for(int i=0;i<n;i++)
+{
+    cin>>a[i];
+    freq[a[i]]++;
+}
+
+int element,maxFreq=0;
+
+for(auto x : freq)
+{
+    if(x.second>maxFreq)
+    {
+        maxFreq=x.second;
+        element=x.first;
+    }
+}
+
+cout<<"Most Frequent Element = "<<element<<endl;
+cout<<"Frequency = "<<maxFreq<<endl;
+
+*/
+
+/*====================================================
+Program 4 : First Non-Repeating Character
+Find first character occurring only once.
+======================================================
+
+string str;
+map<char,int> freq;
+
+cin.ignore();
+cout<<"Enter a string: ";
+getline(cin,str);
+
+for(char ch : str)
+{
+    if(ch!=' ')
+        freq[ch]++;
+}
+
+for(char ch : str)
+{
+    if(ch!=' ' && freq[ch]==1)
+    {
+        cout<<"First Non-Repeating Character = "<<ch;
+        break;
+    }
+}
+
+*/
+
+/*====================================================
+Program 5 : Word Frequency
+Count frequency of every word.
+======================================================
+
+string str,word;
+map<string,int> freq;
+
+cin.ignore();
+cout<<"Enter a sentence: ";
+getline(cin,str);
+
+stringstream ss(str);
+
+while(ss>>word)
+{
+    freq[word]++;
+}
+
+cout<<"\nWord Frequency:\n";
+
+for(auto x : freq)
+{
+    cout<<x.first<<" -> "<<x.second<<endl;
+}
+
+*/
+
+/*====================================================
+Program 6 : Query Frequency Count
+Answer frequency queries using a map.
+======================================================
+
+int n,a[100];
+map<int,int> freq;
+
+cout<<"Enter number of elements: ";
+cin>>n;
+
+cout<<"Enter elements: ";
+for(int i=0;i<n;i++)
+{
+    cin>>a[i];
+    freq[a[i]]++;
+}
+
+int q,x;
+
+cout<<"Enter number of queries: ";
+cin>>q;
+
+while(q--)
+{
+    cout<<"Enter element: ";
+    cin>>x;
+    cout<<"Frequency = "<<freq[x]<<endl;
+}
+
+*/
+
+    return 0;
+}
